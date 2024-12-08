@@ -110,7 +110,7 @@ const Page4 = () => {
               </div>
               <ul className="font-milk text-[10px] lg:text-[13px]">
                 <li>
-                  B.E. in Computer Engineering, K J Somaiya Institute of
+                  B.Tech. in Computer Engineering, K J Somaiya Institute of
                   Technology, Mumbai (2026) – 8.2 CGPA (present)
                 </li>
                 <li>XII (HSC), Abhishek Vidyalayam, Pune – 84% (2022)</li>
