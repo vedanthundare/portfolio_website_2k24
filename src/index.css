@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'milk';
+  src: url('./assets/LEMONMILK-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'bat';
+  src: url('./assets/BatKnight-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+#page1 {
+  position: relative;
+  perspective: 1000px;
+}
+
+.changingtext {
+  width: 40vw;
+}
+
+#page1 {
+  font-family: milk, sans-serif;
+}
+
+.font-milk {
+  font-family: 'milk', sans-serif;
+}
+
+.font-bat {
+  font-family: 'bat', sans-serif;
+}
+
+
+
+#cursor {
+  width: 12vw;
+  height: 12vw;
+  background-color: white;
+  color: rgb(41, 0, 89);
+  border-radius: 50%;
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  mix-blend-mode: difference;
+  opacity: 1;
+}
+
+
+@media (max-width: 1024px) {
+  #cursor {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #cursor {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #cursor {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+.glowing-border {
+  box-shadow: 0 0 20px 2px rgba(0, 85, 255, 0.7), 0 0 10px 2px rgba(138, 43, 226, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glowing-border:hover {
+  box-shadow: 0 0 25px 5px rgba(138, 43, 226, 0.9), 0 0 15px 3px rgba(138, 43, 226, 0.6);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
