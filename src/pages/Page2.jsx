@@ -46,12 +46,12 @@ const Page2 = () => {
   }, []);
 
   return (
-    <div id="works" className="h-[100%] w-screen justify-center items-center">
-      <div className="text-[180px] text-white opacity-25 absolute top-[-150px] left-[300px] font-bat">
-        <div className="h-[100vh] w-screen flex justify-center items-center">
+    <div id="works" className="h-[100%] w-screen justify-center items-center ">
+      <div className="text-[180px] text-white opacity-25 absolute top-[-150px] left-[300px] font-bat xsm:h-0  xsm:w-0 ">
+        <div className="h-[100vh] w-screen flex justify-center items-center xsm:hidden  xsm:h-0  xsm:w-0 ">
           <div
             id="boldtext"
-            className="w-[42%] h-[30%] absolute overflow-hidden"
+            className="w-[42%] h-[30%] absolute overflow-hidden xsm:hidden  xsm:h-0  xsm:w-0 "
           >
             <h1 className="absolute top-[200px]">IMPACTFUL</h1>
             <h1 className="absolute top-[200px]">DESIGN</h1>
