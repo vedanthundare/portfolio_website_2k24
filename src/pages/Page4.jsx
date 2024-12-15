@@ -57,6 +57,7 @@ const Page4 = () => {
           } else if (isMobile) {
             gsap.from(section, {
               x: index % 2 === 0 ? -200 : 200,
+              display: "none",
               scale: 0.8,
               opacity: 0,
               duration: 1,
@@ -95,7 +96,7 @@ const Page4 = () => {
   return (
     <div
       id="experience"
-      className="h-[200vh] lg:h-[100vh] w-screen bg-black text-white"
+      className="h-[200vh] lg:h-[100vh] w-screen bg-black text-white xsm:overflow-x-hidden xsm:pb-16"
     >
       <div className="h-[100%]  w-screen flex flex-col lg:flex-row">
         <div
@@ -110,7 +111,7 @@ const Page4 = () => {
               </div>
               <ul className="font-milk text-[10px] lg:text-[13px]">
                 <li>
-                  B.Tech. in Computer Engineering, K J Somaiya Institute of
+                  B.E. in Computer Engineering, K J Somaiya Institute of
                   Technology, Mumbai (2026) – 8.2 CGPA (present)
                 </li>
                 <li>XII (HSC), Abhishek Vidyalayam, Pune – 84% (2022)</li>
